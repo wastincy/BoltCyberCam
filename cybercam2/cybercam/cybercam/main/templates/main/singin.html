@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>singin</title>
+    <style>
+        body { url(hackathon.jpg);
+               background-size: 100%}
+    </style>
+</head>
+<body >
+<form action="postsing" metod="post">
+    {% csrf_token %}
+    Email:
+    <input type="email" name="email">
+    Password:
+    <input type="password" name="pass">
+    <input type="submit" value="SingIn">
+</form>
+</body>
+</html>
